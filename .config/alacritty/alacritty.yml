@@ -154,7 +154,7 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  #use_thin_strokes: true
+  use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
@@ -542,7 +542,9 @@ colors:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # at once.
-# key_bindings:
+key_bindings:
+  - { key: F, mods: Alt, chars: "\x1bf" }
+  - { key: B, mods: Alt, chars: "\x1bb" }
   #- { key: Paste,                                action: Paste          }
   #- { key: Copy,                                 action: Copy           }
   #- { key: L,         mods: Control,             action: ClearLogNotice }
