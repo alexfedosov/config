@@ -1,0 +1,10 @@
+# git config alias
+alias config='/usr/bin/git --git-dir=/Users/alexfedosov/.cfg/ --work-tree=/Users/alexfedosov'
+
+# react-native android aliases
+alias androidDebug='react-native run-android --variant=mobileDebug'
+alias androidRelease='react-native run-android --variant=mobileRelease'
+
+# utility functions
+alias myip='ipconfig getifaddr en0'
+
