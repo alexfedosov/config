@@ -8,3 +8,7 @@ alias androidRelease='react-native run-android --variant=mobileRelease'
 # utility functions
 alias myip='ipconfig getifaddr en0'
 
+
+#tmux
+alias t='tmux'
+alias ta='tmux attach -t'
