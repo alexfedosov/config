@@ -9,6 +9,11 @@ alias androidRelease='react-native run-android --variant=mobileRelease'
 alias myip='ipconfig getifaddr en0'
 
 
-#tmux
+# tmux
 alias t='tmux'
 alias ta='tmux attach -t'
+alias tw='tmux rename-window'
+alias ts='tmux rename-session'
+
+# adb
+alias pixel='adb -s 996AY1932G'
