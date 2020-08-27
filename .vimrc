@@ -21,8 +21,6 @@ set ruler
 
 set encoding=utf-8
 
-set ttyfast
-
 set showmode
 
 set tabstop=2
