@@ -60,7 +60,7 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Fullscreen
+  startup_mode: SimpleFullscreen
 
   # Window title
   #title: Alacritty
@@ -154,16 +154,38 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: true
+  use_thin_strokes: false
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
 colors:
-  # Default colors
   primary:
-   background: '#1d242c'
+   background: '0x2E3440'
+   foreground: '0xD8DEE9'
+   cursor:
+   text: '0x2E3440'
+   cursor: '0xD8DEE9'
+   normal:
+   black: '0x3B4252'
+   red: '0xBF616A'
+   green: '0xA3BE8C'
+   yellow: '0xEBCB8B'
+   blue: '0x81A1C1'
+   magenta: '0xB48EAD'
+   cyan: '0x88C0D0'
+   white: '0xE5E9F0'
+  
+  bright:
+   black: '0x4C566A'
+   red: '0xBF616A'
+   green: '0xA3BE8C'
+   yellow: '0xEBCB8B'
+   blue: '0x81A1C1'
+   magenta: '0xB48EAD'
+   cyan: '0x8FBCBB'
+   white: '0xECEFF4'# Default colors
   #  foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
@@ -199,16 +221,6 @@ colors:
   #  text: '#eaeaea'
   #  background: '#404040'
 
-  # Normal colors
-  normal:
-   black:   '#1d1f21'
-   red:     '#cc6666'
-   green:   '#99cc99'
-   yellow:  '#f0c674'
-   blue:    '#81a2be'
-   magenta: '#b294bb'
-   cyan:    '#8abeb7'
-   white:   '#c5c8c6'
 
   # Bright colors
   #bright:
