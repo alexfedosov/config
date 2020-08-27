@@ -17,3 +17,11 @@ alias ts='tmux rename-session'
 
 # adb
 alias pixel='adb -s 996AY1932G'
+
+# use exa instead of ls
+alias ll='exa -l --sort=filename'
+alias ls='exa'
+
+# use neovim
+alias v='nvim'
+

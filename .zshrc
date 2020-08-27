@@ -13,6 +13,9 @@ source $ZSH/oh-my-zsh.sh
 # my custom aliases
 . ~/.config/zsh/.zsh_aliases
 
+# use vim for man pages
+export MANPAGER="col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -"
+
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 [[ -f /Users/alexfedosov/.npm-packages/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/alexfedosov/.npm-packages/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
@@ -56,7 +59,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=~/chromedriver-bin:$PATH
 
 #nvm
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 export PATH="$NVM_DIR/versions/node/v$(<$NVM_DIR/alias/default)/bin:$PATH"
