@@ -42,7 +42,8 @@ nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :wri
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 nmap <leader>f <Plug>(coc-codeaction)
 nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>s :exe 'CocList symbols'<CR>
+nnoremap <leader>s  :<C-u>CocList -I symbols<cr>
+nnoremap <leader>o  :<C-u>CocList outline<cr>
 
 if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'
